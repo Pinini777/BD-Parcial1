@@ -1,0 +1,272 @@
+{
+  "exams": [
+    {
+      "id": "parcial-1-3k9",
+      "title": "Preguntas Parcial 1 - 3K9",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Del diagrama MER indicado, cuántas claves primarias existen?",
+          "type": "multiple",
+          "image": "2.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "ninguna"
+            },
+            {
+              "id": "b",
+              "text": "6"
+            },
+            {
+              "id": "c",
+              "text": "5"
+            },
+            {
+              "id": "d",
+              "text": "9"
+            },
+            {
+              "id": "e",
+              "text": "1"
+            }
+          ],
+          "correctAnswer": "c"
+        },
+        {
+          "id": 2,
+          "text": "Del diagrama MER mostrado, al pasarlo al MR, cuál sería la clave primaria de la nueva tabla \"Saca\"?",
+          "type": "multiple",
+          "image": "1.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "Fechadev"
+            },
+            {
+              "id": "b",
+              "text": "Ninguna de las otras respuestas"
+            },
+            {
+              "id": "c",
+              "text": "Clave compuesta por Codigo(usuario) y Codigo(ejemplar)"
+            },
+            {
+              "id": "d",
+              "text": "No es necesario una clave primaria, con las foráneas es suficiente"
+            },
+            {
+              "id": "e",
+              "text": "Fechapres"
+            }
+          ],
+          "correctAnswer": "c"
+        },
+        {
+          "id": 3,
+          "text": "DBeaber y SQL Developer son:",
+          "type": "multiple",
+          "image": null,
+          "options": [
+            {
+              "id": "a",
+              "text": "Sistemas de base de datos"
+            },
+            {
+              "id": "b",
+              "text": "Sistemas de Gestión de Bases de Datos (SGBD)"
+            },
+            {
+              "id": "c",
+              "text": "Herramientas de diseño de bases de datos"
+            },
+            {
+              "id": "d",
+              "text": "Herramienta que simplifican el desarrollo y administración de una base de datos"
+            },
+            {
+              "id": "e",
+              "text": "Ninguna de las anteriores"
+            }
+          ],
+          "correctAnswer": "d"
+        },
+        {
+          "id": 4,
+          "text": "Del diagrama MER mostrado, cuál es la clave primaria de la relación \"Saca\"?",
+          "type": "multiple",
+          "image": "1.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "Fechapres"
+            },
+            {
+              "id": "b",
+              "text": "Fechadev"
+            },
+            {
+              "id": "c",
+              "text": "Clave compuesta por Codigo(usuario) y Codigo(ejemplar)"
+            },
+            {
+              "id": "d",
+              "text": "Ninguna"
+            }
+          ],
+          "correctAnswer": "d"
+        },
+        {
+          "id": 5,
+          "text": "Del diagrama MER mostrado, al pasarlo al MR, qué pasa con la relación \"Tiene\"?",
+          "type": "multiple",
+          "image": "1.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "La relación desaparece y no se aprecia en el MR"
+            },
+            {
+              "id": "b",
+              "text": "se genera una nueva tabla con claves foráneas de las tablas Libro y Ejemplar"
+            },
+            {
+              "id": "c",
+              "text": "No se genera una tabla y aparece una clave foránea en la tabla Libro"
+            },
+            {
+              "id": "d",
+              "text": "se genera una nueva tabla solo con clave primaria"
+            },
+            {
+              "id": "e",
+              "text": "No se genera una tabla y aparece una clave foránea en la tabla Ejemplar"
+            }
+          ],
+          "correctAnswer": "e"
+        },
+        {
+          "id": 6,
+          "text": "Del diagrama MER mostrado, al pasarlo al MR, cómo se representa la relación \"Tiene\"?",
+          "type": "multiple",
+          "image": "1.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "Amabas claves primarias (de la tablas generadas Libro y Ejemplar) pasan como clave foránea"
+            },
+            {
+              "id": "b",
+              "text": "se genera una nueva tabla"
+            },
+            {
+              "id": "c",
+              "text": "La relación desaparece y no se representa de ninguna manera en el MR"
+            },
+            {
+              "id": "d",
+              "text": "La clave primaria de la tabla generada Libro pasa como clave foránea a la tabla generada Ejemplar"
+            },
+            {
+              "id": "e",
+              "text": "La clave primaria de la tabla generada Ejemplar pasa como clave foránea a la tabla generada Libro"
+            }
+          ],
+          "correctAnswer": "d"
+        },
+        {
+          "id": 7,
+          "text": "Del diagrama MER indicado, al pasarlo al MR, cómo se representa la relación Married (casado)?",
+          "type": "multiple",
+          "image": "2.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "La relación no se representa en el MR"
+            },
+            {
+              "id": "b",
+              "text": "Genera una nueva tabla"
+            },
+            {
+              "id": "c",
+              "text": "La clave primaria de \"Staff\" (Personal) pasa como clave foránea a la tabla \"Wife\""
+            },
+            {
+              "id": "d",
+              "text": "La clave primaria de \"Wife\" (esposa) pasa como clave foránea a la tabla \"Staff\""
+            }
+          ],
+          "correctAnswer": "c"
+        },
+        {
+          "id": 8,
+          "text": "Del diagrama MER indicado, cuántos atributos tendrá la tabla \"Staff\" al pasarlo al MR? (considerar que el atributo Age no se pasa al MR)",
+          "type": "multiple",
+          "image": "2.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "5"
+            },
+            {
+              "id": "b",
+              "text": "6"
+            },
+            {
+              "id": "c",
+              "text": "7"
+            },
+            {
+              "id": "d",
+              "text": "4"
+            }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "id": 9,
+          "text": "En el siguiente MER:\nLa entidad débil T.F.C tiene como clave foránea al atributo N°(Alumno)",
+          "type": "multiple",
+          "image": "9.PNG",
+          "options": [
+            {
+              "id": "verdadero",
+              "text": "Verdadero"
+            },
+            {
+              "id": "falso",
+              "text": "Falso"
+            }
+          ],
+          "correctAnswer": "falso"
+        },
+        {
+          "id": 10,
+          "text": "Del diagrama MER indicado, qué tipo de atributo es \"Phone\" (teléfono)",
+          "type": "multiple",
+          "image": "10.PNG",
+          "options": [
+            {
+              "id": "a",
+              "text": "Atributo simple"
+            },
+            {
+              "id": "b",
+              "text": "Atributo compuesto"
+            },
+            {
+              "id": "c",
+              "text": "Atributo derivado"
+            },
+            {
+              "id": "d",
+              "text": "Atributo multivaluado"
+            }
+          ],
+          "correctAnswer": "d"
+        }
+      ]
+    }
+  ]
+}

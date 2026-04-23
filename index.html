@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial 1 – Base de Datos | UTN</title>
+    <meta name="description" content="Cuestionarios interactivos para Parcial 1 de Base de Datos 2 – UTN." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo+Black&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- HOME -->
+    <div id="view-home" class="view active">
+        <div class="home-container">
+            <header class="home-header">
+                <div class="header-tag">UTN · Base de Datos 2</div>
+                <h1 class="home-title">Parcial 1<br /><span class="accent-text">BD</span></h1>
+                <p class="home-subtitle">Cuestionarios basados en parciales 2024-2025.<br />Podes seleccionar el cronometro
+                    con 15 minutos, o sin tiempo.</p>
+            </header>
+            <section class="exams-grid" id="exams-grid"></section>
+            <footer class="home-footer">
+                <p>vibecodeado duramente by pino</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="view-quiz" class="view">
+        <div class="quiz-topbar">
+            <button id="btn-home" class="btn-back">← Inicio</button>
+            <div class="quiz-title-bar">
+                <span id="quiz-name" class="quiz-name-label"></span>
+            </div>
+            <div class="quiz-meta">
+                <span id="score-display" class="score-badge">0 / 0</span>
+                <div id="timer-wrapper" class="timer-wrapper" style="display:none">
+                    <span id="timer-display" class="timer-badge">15:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar-track">
+                <div id="progress-bar" class="progress-bar-fill"></div>
+            </div>
+            <span id="progress-label" class="progress-label">1 / 10</span>
+        </div>
+
+        <div id="quiz-navigator" class="quiz-navigator"></div>
+
+        <main class="quiz-main">
+            <div class="question-card" id="question-card">
+                <div id="question-image-wrapper" class="question-image-wrapper" style="display:none"></div>
+                <div class="question-header">
+                    <span id="question-number" class="question-number-badge">01</span>
+                    <p id="question-text" class="question-text"></p>
+                </div>
+                <div id="options-container" class="options-container"></div>
+                <div id="select-container" class="select-container" style="display:none"></div>
+                <div id="feedback-banner" class="feedback-banner" style="display:none"></div>
+                <div class="quiz-btn-row">
+                    <button id="btn-next" class="btn-next" style="display:none">Siguiente pregunta →</button>
+                    <button id="btn-finish" class="btn-next btn-finish" style="display:none">Ver resultados</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="view-results" class="view">
+        <div class="results-container">
+            <div class="results-card">
+                <div id="result-icon" class="result-icon"></div>
+                <h2 id="result-title" class="result-title">Resultado Final</h2>
+                <div id="result-score-big" class="result-score-big"></div>
+                <p id="result-percent" class="result-percent"></p>
+                <div id="result-breakdown" class="result-breakdown"></div>
+                <div class="results-actions">
+                    <button id="btn-retry" class="btn-retry">Reintentar</button>
+                    <button id="btn-home-result" class="btn-home-result">Volver al inicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL TIMER -->
+    <div id="modal-timer" class="modal-overlay" style="display:none">
+        <div class="modal-box">
+            <h3 class="modal-title">Temporizador</h3>
+            <p class="modal-desc">15 minutos para completar el test.<br />Sin temporizador podes tomarte el tiempo que
+                necesites.</p>
+            <div class="modal-actions">
+                <button id="btn-timer-yes" class="btn-modal-yes">Con temporizador</button>
+                <button id="btn-timer-no" class="btn-modal-no">Sin limite de tiempo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
