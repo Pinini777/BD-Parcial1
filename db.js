@@ -291,7 +291,7 @@ const EXAMS_DB = {
       {
         number: 9,
         text: 'En el modelo relacional se genera una tabla de la relación "dispone" del siguiente MER.',
-        imageId: '4',
+        imageId: '5',
         type: 'truefalse',
         options: [
           { key: 'verdadero', label: 'Verdadero' },
