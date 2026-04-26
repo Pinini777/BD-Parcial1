@@ -989,8 +989,8 @@ EXAMS_DB['parcial-1-6'] = {
         { key: 'd', label: '1' },
         { key: 'e', label: '3' },
       ],
-      correct: 'e',
-      feedback: 'En el MR: Proyecto tiene FK\u2192Sede (1), la tabla Actuaci\u00f3n tiene FK\u2192Proyecto (2) y FK\u2192Poblaci\u00f3n (3). Total = 3 claves for\u00e1neas.',
+      correct: 'b',
+      feedback: null,
     },
     // Q6: Select motor BD: SGBD / Oracle / servicio
     {
