@@ -315,7 +315,7 @@ function renderMultipleQ(q) {
     const btn = document.createElement('button');
     btn.className = 'option-btn';
     btn.id = `opt-${idx}`;
-    btn.innerHTML = `<span class="option-letter">${opt.key.charAt(0).toUpperCase()}</span><span>${opt.label}</span>`;
+    btn.innerHTML = `<span class="option-letter">${opt.key.charAt(0).toUpperCase()}</span><span class="option-text">${opt.label}</span>`;
     btn.addEventListener('click', () => handleMultiple(q, opt, idx));
     c.appendChild(btn);
   });

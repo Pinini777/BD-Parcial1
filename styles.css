@@ -495,6 +495,12 @@ body {
   margin-top: 2px;
 }
 
+.option-text {
+  flex: 1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .option-btn.correct {
   background: var(--green-light);
   border-color: var(--green);
