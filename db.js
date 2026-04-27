@@ -849,7 +849,7 @@ EXAMS_DB['parcial-1-7'] = {
     {
       number: 7,
       text: 'En el siguiente MER, indicar cu\u00e1l de las siguientes afirmaciones es correcta al pasar al modelo Relacional.',
-      imageId: '4',
+      imageId: '3',
       type: 'multiple',
       options: [
         { key: 'a', label: 'La entidad TFC es una entidad d\u00e9bil' },
@@ -865,7 +865,7 @@ EXAMS_DB['parcial-1-7'] = {
     {
       number: 8,
       text: 'En el siguiente MER, indicar cu\u00e1l de las siguientes afirmaciones es correcta al pasar al modelo Relacional.',
-      imageId: '4',
+      imageId: '3',
       type: 'multiple',
       options: [
         { key: 'a', label: 'La relaci\u00f3n "esta en" entre Grupo y Alumno genera una nueva tabla' },
