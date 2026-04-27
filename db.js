@@ -767,7 +767,7 @@ EXAMS_DB['parcial-1-5'] = {
 EXAMS_DB['parcial-1-7'] = {
   id: 'parcial-1-7',
   label: 'Parcial 1 \u2013 1.7',
-  description: '12 preguntas \u00b7 Preguntas m\u00e1s frecuentes \u00b7 Im\u00e1genes 4, 5, 6 y 7',
+  description: '13 preguntas \u00b7 Preguntas m\u00e1s frecuentes \u00b7 Im\u00e1genes 4, 5, 6, 7 y 8',
   questions: [
     {
       number: 1,
@@ -934,6 +934,20 @@ EXAMS_DB['parcial-1-7'] = {
         { key: 'd', label: 'Ninguna de las anteriores.' },
       ],
       correct: 'c',
+      feedback: null,
+    },
+    {
+      number: 13,
+      text: 'De las tablas indicadas, que sentencia es verdadera:',
+      imageId: '8',
+      type: 'multiple',
+      options: [
+        { key: 'a', label: 'La tabla "Detalle" proviene de una relacion de grado mayor a 2 del modelo Entidad/Relacion respectivo.' },
+        { key: 'b', label: 'La tabla "Detalle" proviene de una entidad "Detalle" del modelo Entidad/Relacio respectivo.' },
+        { key: 'c', label: 'La tabla "Detalle" no tiene claves for\u00e1neas.' },
+        { key: 'd', label: 'La tabla "Detalle" proviene de una relacion N:M del modelo Entidad/Relacion respectivo.' },
+      ],
+      correct: 'd',
       feedback: null,
     },
   ],
