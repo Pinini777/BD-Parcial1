@@ -77,7 +77,7 @@ const EXAMS_DB = {
           { key: 'c', label: 'Clave compuesta por Codigo(usuario) y Codigo(ejemplar)' },
           { key: 'd', label: 'Ninguna' },
         ],
-        correct: 'c',
+        correct: 'd',
         feedback: null,
       },
       {
