@@ -191,12 +191,14 @@ body {
 .quiz-navigator {
   display: flex;
   gap: 8px;
-  padding: 10px 20px;
-  background: var(--cream);
-  border-bottom: var(--border);
+  padding: 0 0 16px 0;
+  background: transparent;
+  border-bottom: none;
   flex-wrap: wrap;
-  min-height: 56px;
   align-items: center;
+  width: 100%;
+  max-width: 800px;
+  justify-content: flex-start;
 }
 
 .nav-pill {
@@ -427,27 +429,8 @@ body {
   gap: 16px;
 }
 
-.quiz-question-counter {
-  width: 100%;
-  max-width: 800px;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 16px;
-}
-
 .question-number-badge {
-  background: var(--exam-color, var(--black));
-  color: var(--black);
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 700;
-  padding: 8px 18px;
-  border: var(--border-thick);
-  border-radius: var(--radius);
-  box-shadow: 3px 3px 0 var(--black);
-  white-space: nowrap;
-  flex-shrink: 0;
-  text-transform: uppercase;
+  display: none;
 }
 
 .question-text {
