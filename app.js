@@ -86,7 +86,7 @@ const state = {
   score:            0,
   useTimer:         false,
   timerInterval:    null,
-  timerSeconds:     900,
+  timerSeconds:     600,
   pendingExamIdx:   null,
   answers:          [],   // [{ answered, correct, selectedIdx }]
 };
@@ -180,7 +180,7 @@ function loadExam(idx) {
   state.answers   = state.shuffledQs.map(() => ({ answered: false, correct: false, selectedIdx: -1 }));
 
   clearInterval(state.timerInterval);
-  state.timerSeconds = 900;
+  state.timerSeconds = 600;
 
   $('quiz-name').textContent = state.exams[idx].label;
 
