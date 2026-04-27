@@ -257,7 +257,6 @@ function renderQuestion() {
 
   $('progress-bar').style.width  = `${Math.round((state.currentQ / total) * 100)}%`;
   $('progress-label').textContent = `${state.currentQ + 1} / ${total}`;
-  $('question-number').textContent = `Pregunta ${pad(state.currentQ + 1)}`;
   $('question-text').textContent   = q.text;
 
   // Imagen
