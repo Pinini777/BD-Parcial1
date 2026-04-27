@@ -377,7 +377,8 @@ body {
 /* ── Question Card ── */
 .quiz-main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 32px 24px 64px;
 }
 
@@ -426,15 +427,27 @@ body {
   gap: 16px;
 }
 
+.quiz-question-counter {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
 .question-number-badge {
-  background: var(--black);
-  color: var(--yellow);
+  background: var(--exam-color, var(--black));
+  color: var(--black);
   font-family: var(--font-display);
-  font-size: 1rem;
-  padding: 4px 12px;
-  border-radius: 3px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border: var(--border-thick);
+  border-radius: var(--radius);
+  box-shadow: 3px 3px 0 var(--black);
   white-space: nowrap;
   flex-shrink: 0;
+  text-transform: uppercase;
 }
 
 .question-text {
